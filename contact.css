@@ -1,0 +1,495 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+}
+
+header {
+    background-color: white;
+    color: black;
+    width: 100vw;
+    height: 100px;
+    /* position: fixed;
+    top: 0em;  */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 22px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+    margin-bottom: 100px;
+
+    object-fit: cover;
+    background-image: url(./hero.jpg);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+}
+
+.input {
+    background-color: white;
+    color: #0B8494;
+    padding: 5px 60px 5px 5px;
+    border: 2px solid grey;
+    border-radius: 2px 2px 2px;
+}
+
+.btn {
+    padding: 5px 20px;
+    background-color: #0B8494;
+    color: white;
+}
+
+#photos:hover,#videos:hover,#about:hover,#contact:hover{
+    text-decoration-thickness: 3px;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+    text-decoration-line: underline ;
+}
+/* section-one css styling */
+main {
+    /* background-color: pink; */
+    width: 90vw;
+    height: auto;
+    margin: 330px auto 5px auto;
+
+}
+
+#sectionone {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+} 
+
+#contact-page {
+    width: 30%;
+    height: 30%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+#name,
+#email,
+textarea{
+    padding: 10px 25%;
+    margin: 10px 1px;
+    display: block;
+    border-radius: 3px 3px 3px black;
+}
+
+#button {
+    padding: 10px 15%;
+    background-color: #0B8494;
+    color: black;
+    margin: 10px 1px;
+    border: 5px;
+    border-radius: 3px 3px 3px black;
+}
+
+#select {
+    padding: 10px 34.05%;
+    margin: 10px 1px;
+    display: block;
+    border-radius: 3px 3px 3px black;
+}
+
+
+#name:hover,
+#email:hover,
+#textarea:hover,
+#select:hover {
+    background-color: #0B8494;
+    color: white;
+    border: 1px;
+    border-radius: 3px 3px 3px black;
+    font-weight: bolder;
+}
+
+#blue {
+    color: #0B8494;
+}
+
+#our-address {
+    width: 30%;
+    height: 100%;
+    padding: 10px 10px 10px 30px;
+    align-items: center;
+    align-content: center;
+}
+
+#location {
+    width: 30%;
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    align-content: center;
+}
+
+#iframe {
+    width: 100%;
+    height: auto;
+}
+#sectiontwo{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+}
+#sectiontwo-div{
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* this is footer */
+footer{
+    background-color: #D1D1D1;
+    padding: 10px;
+    width: 100vw;
+    height: auto;
+}
+#sectionone-footer{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+    width: 100vw;
+    height: auto;
+}
+#about-catalogz{
+    width: 30%;
+    text-align: center;
+}
+
+#our-links{
+    width: 30%;
+    text-align: center;
+}
+
+#icons{
+    width: 30%;
+    text-align: center;
+}
+#bluec{
+    color: #0B8494;
+    font-size:large;
+    font-weight: bold;
+}
+#sectiontwo-footer{
+    text-align: center;
+
+}
+
+/* Here iam making the Responsive website using Mediaqueries. */
+/* Responsive for Mobile-s,Mobile-M,Mobile-L. */
+@media screen and (min-width:320px )and (max-width:425px){
+    /* this is body responsive */
+    body{
+        width: 320px;
+    }
+    /* this is header responsive */
+    header{
+        width: 100vw;
+    }
+    #navbar{
+        width: 100%;
+    }
+    /* this is main responsive */
+    main{
+        width: 100vw;
+        height: auto;
+        margin: 210px auto 30px auto;
+    }
+    .navbar {
+        background-color: aqua;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        height: 30vh;
+        width: 100%;
+        position: relative;
+    
+        object-fit:cover;
+        background-image: url(./hero.jpg);
+        background-size: 100% 100%;  
+        background-repeat: no-repeat;
+    }
+    section{
+        width: 100vw;
+
+    }
+    #sectionone {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    #contact-page,#our-address,#location{
+        margin: 10px;
+    }
+    #select {
+        text-align: center;
+    }
+    #sectiontwo{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    } 
+    #sectiontwo-div{
+               margin: 10px; 
+    }
+    /* this is footer responsive */
+   
+}
+/* Responsive for Tablet. */
+@media screen and (min-width:426px )and (max-width:768px){
+    body{
+        width: 426px;
+    }
+    /* this is header responsive */
+    header{
+        width: 100vw;
+    }
+    #navbar{
+        width: 100%;
+    }
+    /* this is main responsive */
+    main{
+        width: 100vw;
+        height: auto;
+        margin: 320px auto 30px auto;
+    }
+    .navbar {
+        background-color: aqua;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        height: 40vh;
+        width: 100%;
+        position: relative;
+    
+        object-fit:cover;
+        background-image: url(./hero.jpg);
+        background-size: 100% 100%;  
+        background-repeat: no-repeat;
+    }
+    section{
+        width: 100vw;
+
+    }
+    #sectionone {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    #contact-page,#our-address,#location{
+        margin: 10px;
+    }
+    #select {
+        text-align: center;
+    }
+    #sectiontwo {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    } 
+    #sectiontwo-div{
+               margin: 10px; 
+    }
+    /* this is footer responsive */
+}
+/* Responsive for Laptop. */
+@media screen and (min-width:769px )and (max-width:1024px){
+    body{
+        width: 769px;
+    }
+    /* this is header responsive */
+    header{
+        width: 100vw;
+    }
+    #navbar{
+        width: 100%;
+    }
+    /* this is main responsive */
+    main{
+        width: 100vw;
+        height: auto;
+        margin: 410px auto 30px auto;
+    }
+    .navbar {
+        background-color: aqua;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        height: 50vh;
+        width: 100%;
+        position: relative;
+    
+        object-fit:cover;
+        background-image: url(./hero.jpg);
+        background-size: 100% 100%;  
+        background-repeat: no-repeat;
+    }
+    section{
+        width: 100vw;
+
+    }
+    #sectionone {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    #contact-page,#our-address,#location{
+        margin: 10px;
+    }
+    #select {
+        text-align: center;
+    }
+    #sectiontwo {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    } 
+    #sectiontwo-div{
+               margin: 10px; 
+    }
+    /* this is footer responsive */
+}
+/* Responsive for L-Laptop. */
+@media screen and (min-width:1025px )and (max-width:1440px){
+    body{
+        width: 1025px;
+    }
+    header{
+        width: 100vw;
+    }
+    #navbar{
+        width: 100%;
+    }
+    /* this is main responsive */
+    main{
+        width: 100vw;
+        height: auto;
+        margin: 410px auto 30px auto;
+    }
+    .navbar {
+        background-color: aqua;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        height: 50vh;
+        width: 100%;
+        position: relative;
+    
+        object-fit:cover;
+        background-image: url(./hero.jpg);
+        background-size: 100% 100%;  
+        background-repeat: no-repeat;
+    }
+    section{
+        width: 100vw;
+
+    }
+    /* this is footer responsive */
+
+}
+/* Responsive for 4K-Screen. */
+@media screen and (min-width:1441px )and (max-width:2560px){
+    body{
+        width: 1441px;
+    }
+    header{
+        width: 100vw;
+    }
+    #navbar{
+        width: 100%;
+    }
+    /* this is main responsive */
+    main{
+        width: 100vw;
+        height: auto;
+        margin: 420px auto 30px auto;
+    }
+    section{
+        width: 100vw;
+
+    }
+
+    .navbar {
+        background-color: aqua;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        height: 50vh;
+        width: 100%;
+        position: relative;
+    
+        object-fit:cover;
+        background-image: url(./hero.jpg);
+        background-size: 100% 100%;  
+        background-repeat: no-repeat;
+    }
+    /* this is footer responsive */
+}

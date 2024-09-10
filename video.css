@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+}
+
+header {
+    background-color: white;
+    color: black;
+    width: 100vw;
+    height: 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 22px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+    margin-bottom: 100px;
+}
+.input{
+    background-color: white;
+    color: #0B8494;
+    padding: 5px 60px 5px 5px;
+    border: 2px solid grey;
+    border-radius: 2px 2px 2px;
+}
+.btn{
+    padding: 5px 20px;
+    background-color: #0B8494;
+    color:white;
+}
+/* .video-bg {
+    background-size: 100% 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 45vh;
+    width: 100vw;
+    object-fit: cover;
+}  */
+#photos:hover,#videos:hover,#about:hover,#contact:hover{
+    text-decoration-thickness: 3px;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+    text-decoration-line: underline ;
+}
+/* section-one css styling */
+ 
+/* section-one css styling */
+main{
+    /* background-color: pink; */
+    width: 100vw;
+    height: auto;
+    margin: 330px auto 30px auto;
+
+} 
+#heading{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+#blue{
+    color: #0B8494;
+}
+button{
+    border: 2px solid grey ;
+    padding: 5px 10px;
+}
+#sectionone{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    gap: 10px;
+    width: 100%;
+    margin: 1% auto;
+    padding: 10px;
+} 
+#sectiondiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sectiontwo{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+}
+#button{
+    background-color: #0B8494;
+    border: 2px solid #0B8494;
+    padding: 5px 15px;
+    border-radius: 2px 2px 2px;
+}
+#buttonone{
+    background-color: #0B8494;
+    border: 2px solid grey ;
+    color: white;
+}
+/* this is footer */
+footer{
+    background-color: #D1D1D1;
+    padding: 10px;
+    width: 100vw;
+    height: auto;
+}
+#sectionone-footer{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+    width: 100vw;
+    height: auto;
+}
+#about-catalogz{
+    width: 30%;
+    text-align: center;
+}
+
+#our-links{
+    width: 30%;
+    text-align: center;
+}
+
+#icons{
+    width: 30%;
+    text-align: center;
+}
+#bluec{
+    color: #0B8494;
+    font-size:large;
+    font-weight: bold;
+}
+#sectiontwo-footer{
+    text-align: center;
+
+}
+
+/* Here iam making the Responsive website using Mediaqueries. */
+/* Responsive for Mobile-s,Mobile-M,Mobile-L. */
+@media screen and (min-width:320px )and (max-width:425px){
+    /* this is body responsive */
+    body{
+        width: 320px;
+    }
+    /* this is header responsive */
+    header{
+        width: 100vw;
+    }
+    #navbar{
+        width: 100%;
+    }
+    /* this is main responsive */
+    main{
+        width: 100vw;
+        height: auto;
+        margin: 280px auto 30px auto;
+    }
+    .video-bg {
+        background-color: blue;
+        background-size: 100% 40%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 40vh;
+        width: 100vw;
+        object-fit: cover;
+    } 
+    section{
+        width: 100vw;
+
+    }
+    #mainimage{
+        width:100%;
+    }
+    #sectionone{
+        /* background-color: blue; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr); 
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+    /* this is footer responsive */
+    section{
+        width: 100vw;
+
+    }
+   
+}
+/* Responsive for Tablet. */
+@media screen and (min-width:426px )and (max-width:768px){
+    body{
+        width: 426px;
+    }
+    /* this is header responsive */
+    header{
+        width: 100vw;
+    }
+    #navbar{
+        width: 100%;
+    }
+    /* this is main responsive */
+    main{
+        width: 100vw;
+        height: auto;
+        margin: 260px auto 30px auto;
+    }
+    .video-bg {
+        background-size: 100% 40%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 40vh;
+        width: 100vw;
+        object-fit: cover;
+        padding: 10px;
+    }
+    #heading{
+        padding: 80px;
+    } 
+    section{
+        width: 100vw;
+
+    }
+    #mainimage{
+        width:100%;
+    }
+    #one{
+        background-color: aqua;
+    }
+    #sectionone{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        gap: 20px;
+        width:auto;
+    }
+    /* this is footer responsive */
+    section{
+        width: 100vw;
+
+    }
+    img{
+        width: 100px;
+    }
+}
+/* Responsive for Laptop. */
+@media screen and (min-width:769px )and (max-width:1024px){
+    body{
+        width: 769px;
+    }
+    /* this is header responsive */
+    header{
+        width: 100vw;
+    }
+    #navbar{
+        width: 100%;
+    }
+    /* this is main responsive */
+    main{
+        width: 100vw;
+        height: auto;
+        margin: 300px auto 30px auto;
+    }
+    .video-bg {
+        background-size: 100% 40%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 50vh;
+        width: 100vw;
+        object-fit: cover;
+        padding: 10px;
+    }
+    section{
+        width: 100vw;
+
+    }
+    #mainimage{
+        width:100%;
+    }
+    #sectionone{
+        /* background-color: blue; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr); 
+        gap: 20px;
+        width: 100%;
+    }
+    /* this is footer responsive */
+    section{
+        width: 100vw;
+
+    }
+}
+/* Responsive for L-Laptop. */
+@media screen and (min-width:1025px )and (max-width:1440px){
+    body{
+        width: 1025px;
+    }
+    header{
+        width: 100vw;
+    }
+    #navbar{
+        width: 100%;
+    }
+    /* this is main responsive */
+    main{
+        width: 100vw;
+        height: auto;
+        margin: 300px auto 30px auto;
+    }
+    .video-bg {
+        background-size: 100% 40%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 40vh;
+        width: 100vw;
+        object-fit: cover;
+        padding: 10px;
+    }
+    section{
+        width: 100vw;
+
+    }
+    #mainimage{
+        width:100%;
+    }
+    #sectionone{
+        /* background-color: blue; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr); 
+        gap: 20px;
+        width: 100%;
+    }
+    /* this is footer responsive */
+    section{
+        width: 100vw;
+
+    }
+}
+/* Responsive for 4K-Screen. */
+@media screen and (min-width:1441px )and (max-width:2560px){
+    body{
+        width: 1441px;
+    }
+    header{
+        width: 100vw;
+    }
+    #navbar{
+        width: 100%;
+    }
+    /* this is main responsive */
+    main{
+        width: 100vw;
+        height: auto;
+        margin: 410px auto 30px auto;
+    }
+    .video-bg {
+        background-size: 100% 40%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 50vh;
+        width: 100vw;
+        object-fit: cover;
+        padding: 10px;
+    }
+    section{
+        width: 100vw;
+
+    }
+    #one{
+        background-color: aqua;
+    }
+    #mainimage{
+        width:100%;
+    }
+
+    #sectionone{
+        /* background-color: blue; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr); 
+        gap: 20px;
+        width: 100%;
+    }
+    /* this is footer responsive */
+    section{
+        width: 100vw;
+
+    }
+}
